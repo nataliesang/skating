@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9TWY105VZQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9TWY105VZQ');
+</script>
+    
     <link rel="shortcut icon" type="image/jpg" href="images/skatingicon.jpg"/>
 
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -33,6 +43,29 @@
 
 <div id=pic1id> 
   <img src="images/skatingpic1.jpg" alt="Natalie competing in Canada" id = "pic1">
+</div>
+
+<div class="container">  
+  <form id="contact" action="https://formspree.io/f/mnqobzbb"
+  method="POST">
+    <h3>Contact Me</h3>
+    <h4>Tell me what you think!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" id = "name_id" name="name" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" id = "email_id" name="email" required>
+    </fieldset>
+  
+    <fieldset>
+      <textarea placeholder="Type your message here...." id = "msg" name="mesg" required></textarea>
+    </fieldset>
+    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+    <label for ="cBox">Remember me</label>
+    <fieldset>
+      <button name="submit" type="submit" value = "Contact Me" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
 </div>
 
 
